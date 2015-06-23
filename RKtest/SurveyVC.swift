@@ -58,7 +58,7 @@ class SurveyVC: UIViewController, ORKTaskViewControllerDelegate  {
 
         let questionStepTitle = "Are you happy?"
         let questionStep = ORKQuestionStep(identifier: "Q1", title: questionStepTitle, answer: format)
-//        questionStep.optional = false
+        questionStep.optional = false
         
         steps += [questionStep]
 
@@ -97,17 +97,5 @@ class SurveyVC: UIViewController, ORKTaskViewControllerDelegate  {
         
     }
     
-    func taskViewController(taskViewController: ORKTaskViewController, viewControllerForStep step: ORKStep) -> ORKStepViewController? {
-        
-        if step.identifier == "Q1" {
-            let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = mainStoryBoard.instantiateViewControllerWithIdentifier("CustomStepVC") as! CustomStepVC
-            
-            controller.step = step
-            return controller
-        }
-        
-        return nil
-    }
     
 }

@@ -14,8 +14,6 @@
 		CEEF1E8C1B3609F600859829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF1E8B1B3609F600859829 /* AppDelegate.swift */; };
 		CEEF1E8F1B360A4600859829 /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF1E8D1B360A4600859829 /* SurveyVC.swift */; };
 		CEEF1E901B360A4600859829 /* SurveyTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF1E8E1B360A4600859829 /* SurveyTaskVC.swift */; };
-		CEEF1E941B363B6400859829 /* CustomStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF1E931B363B6400859829 /* CustomStep.swift */; };
-		CEEF1E981B3641CF00859829 /* CustomStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF1E971B3641CF00859829 /* CustomStep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,20 +23,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = CEEF1E471B36082900859829;
 			remoteInfo = RKtest;
-		};
-		CEF2393C1B37A20A00EC2FE8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEEF1E711B36086300859829 /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B183A5951A8535D100C76870;
-			remoteInfo = ResearchKit;
-		};
-		CEF2393E1B37A20A00EC2FE8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEEF1E711B36086300859829 /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
-			remoteInfo = ResearchKitTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,12 +48,10 @@
 		CEEF1E611B36082900859829 /* RKtestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKtestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEF1E661B36082900859829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEF1E671B36082900859829 /* RKtestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKtestTests.m; sourceTree = "<group>"; };
-		CEEF1E711B36086300859829 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		CEEF1E711B36086300859829 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		CEEF1E8B1B3609F600859829 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEF1E8D1B360A4600859829 /* SurveyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
 		CEEF1E8E1B360A4600859829 /* SurveyTaskVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTaskVC.swift; sourceTree = "<group>"; };
-		CEEF1E931B363B6400859829 /* CustomStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStep.swift; sourceTree = "<group>"; };
-		CEEF1E971B3641CF00859829 /* CustomStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +94,9 @@
 		CEEF1E4A1B36082900859829 /* RKtest */ = {
 			isa = PBXGroup;
 			children = (
-				CEEF1E931B363B6400859829 /* CustomStep.swift */,
 				CEEF1E8D1B360A4600859829 /* SurveyVC.swift */,
 				CEEF1E8E1B360A4600859829 /* SurveyTaskVC.swift */,
 				CEEF1E551B36082900859829 /* Main.storyboard */,
-				CEEF1E971B3641CF00859829 /* CustomStep.swift */,
 				CEEF1E581B36082900859829 /* Images.xcassets */,
 				CEEF1E5A1B36082900859829 /* LaunchScreen.xib */,
 				CEEF1E4B1B36082900859829 /* Supporting Files */,
@@ -148,15 +128,6 @@
 				CEEF1E661B36082900859829 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CEF239371B37A20A00EC2FE8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CEF2393D1B37A20A00EC2FE8 /* ResearchKit.framework */,
-				CEF2393F1B37A20A00EC2FE8 /* ResearchKitTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,12 +197,6 @@
 			mainGroup = CEEF1E3F1B36082900859829;
 			productRefGroup = CEEF1E491B36082900859829 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CEF239371B37A20A00EC2FE8 /* Products */;
-					ProjectRef = CEEF1E711B36086300859829 /* ResearchKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				CEEF1E471B36082900859829 /* RKtest */,
@@ -239,23 +204,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CEF2393D1B37A20A00EC2FE8 /* ResearchKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ResearchKit.framework;
-			remoteRef = CEF2393C1B37A20A00EC2FE8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CEF2393F1B37A20A00EC2FE8 /* ResearchKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ResearchKitTests.xctest;
-			remoteRef = CEF2393E1B37A20A00EC2FE8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CEEF1E461B36082900859829 /* Resources */ = {
@@ -284,9 +232,7 @@
 			files = (
 				CEEF1E8C1B3609F600859829 /* AppDelegate.swift in Sources */,
 				CEEF1E8F1B360A4600859829 /* SurveyVC.swift in Sources */,
-				CEEF1E941B363B6400859829 /* CustomStep.swift in Sources */,
 				CEEF1E901B360A4600859829 /* SurveyTaskVC.swift in Sources */,
-				CEEF1E981B3641CF00859829 /* CustomStep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
